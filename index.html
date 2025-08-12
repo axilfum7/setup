@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: rgba(54, 205, 228, 0.503);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .setup{
+            background-color: rgba(54, 222, 228, 0.503);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name"> <br>
+            <label for="mobile_number">Mobile Number:</label>
+            <input type="text" id="mobile_number"><br>
+            <label for="age">Age:</label>
+            <input type="text" id="age"><br>
+            <label for="gender">Gender:</label><br>
+            <button>Female</button><br><br>
+            <select id="gender" name="gender"><br>
+                <option value="" disabled selected>-- Please select --</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="others">Others</option>
+            </select><br>
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <div class="setup">
+        <form action="#">
+            <h2>Setup your account</h2>
+            <h4>Make sure to use a valid email address, you'll nedd to verify it before you can send any compaigns</h4>
+            <label for="name">Name</label>
+            <input type="text" id="name"> <br> <br>
+            <label for="email_address">Email Address</label>
+            <input type="text" id="email_address"> <br> <br>
+            <label for="username">Username</label>
+            <input type="text" id="username"> <br> <br>
+            <label for="password">Password</label>
+            <input type="password" id="password"> <br> <br>
+            <label for="company">Company</label>
+            <input type="text" id="company"> <br> <br>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="uzbekistan">Uzbekistan</option>
+                <option value="japan">Japan</option>
+                <option value="india">India</option>
+                <option value="korea">korea</option>
+                <option value="turkey">Turkey</option>
+                <option value="madagaskar">Madagaskar</option>
+            </select> <br> <br>
+            <label for="uzbekistan">Timezone</label>
+            <input type="time" id="Uzbekistan">
+
+        </form>
+
+    </div>
+</body>
+
+</html>
