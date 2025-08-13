@@ -1,77 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .container {
-            background-color: rgba(54, 205, 228, 0.503);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    .container {
+        background-color: rgba(54, 205, 228, 0.503);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px; 
+    }
 
-        .setup{
-            background-color: rgba(54, 222, 228, 0.503);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
+    .setup {
+        background-color: rgba(54, 222, 228, 0.503);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+
+    .page {
+        background-color: rgba(54, 228, 211, 0.503);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px; 
+        flex-direction: column;
+    }
+
+    .box-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 50px;
+        
+    }
+    .box {
+        width: 100px;
+        height: 100px;
+        background-color: #4a77e5; 
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+         
+    }
+
+    .letter-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 100px; 
+    width: 500px; 
+    margin: 50px auto 0;; 
+  }
+
+  .letter-box {
+  background: #3a86e9;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-bottom: 10px; 
+}
+
+.box-class{
+    display: flex;             
+    justify-content: flex-start;   
+    
+}
+.boxes{
+  background-color: #3a86e9; 
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 50px;
+  width: 80px;
+  height: 50px;
+}
+</style>
 </head>
-
 <body>
-    <div class="container">
-        <form action="#">
-            <label for="name">Name:</label>
-            <input type="text" id="name"> <br>
-            <label for="mobile_number">Mobile Number:</label>
-            <input type="text" id="mobile_number"><br>
-            <label for="age">Age:</label>
-            <input type="text" id="age"><br>
-            <label for="gender">Gender:</label><br>
-            <button>Female</button><br><br>
-            <select id="gender" name="gender"><br>
-                <option value="" disabled selected>-- Please select --</option>
-                <option value="female">Female</option>
-                <option value="male">Male</option>
-                <option value="others">Others</option>
-            </select><br>
-            <button>Submit</button>
-        </form>
-    </div>
 
-    <div class="setup">
-        <form action="#">
-            <h2>Setup your account</h2>
-            <h4>Make sure to use a valid email address, you'll nedd to verify it before you can send any compaigns</h4>
-            <label for="name">Name</label>
-            <input type="text" id="name"> <br> <br>
-            <label for="email_address">Email Address</label>
-            <input type="text" id="email_address"> <br> <br>
-            <label for="username">Username</label>
-            <input type="text" id="username"> <br> <br>
-            <label for="password">Password</label>
-            <input type="password" id="password"> <br> <br>
-            <label for="company">Company</label>
-            <input type="text" id="company"> <br> <br>
-            <label for="country">Country</label>
-            <select name="country" id="country">
-                <option value="uzbekistan">Uzbekistan</option>
-                <option value="japan">Japan</option>
-                <option value="india">India</option>
-                <option value="korea">korea</option>
-                <option value="turkey">Turkey</option>
-                <option value="madagaskar">Madagaskar</option>
-            </select> <br> <br>
-            <label for="uzbekistan">Timezone</label>
-            <input type="time" id="Uzbekistan">
+<div class="container">
+    <form action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name"><br>
+        <label for="mobile_number">Mobile Number:</label>
+        <input type="text" id="mobile_number"><br>
+        <label for="age">Age:</label>
+        <input type="text" id="age"><br>
+        <label for="gender">Gender:</label><br>
+        <button>Female</button><br><br>
+        <select id="gender" name="gender">
+            <option value="" disabled selected>-- Please select --</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="others">Others</option>
+        </select><br>
+        <button>Submit</button>
+    </form>
+</div>
 
-        </form>
+<div class="setup">
+    <form action="#">
+        <h2>Setup your account</h2>
+        <h4>Make sure to use a valid email address, you'll need to verify it before you can send any campaigns</h4>
+        <label for="name">Name</label>
+        <input type="text" id="name"><br><br>
+        <label for="email_address">Email Address</label>
+        <input type="text" id="email_address"><br><br>
+        <label for="username">Username</label>
+        <input type="text" id="username"><br><br>
+        <label for="password">Password</label>
+        <input type="password" id="password"><br><br>
+        <label for="company">Company</label>
+        <input type="text" id="company"><br><br>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value="uzbekistan">Uzbekistan</option>
+            <option value="japan">Japan</option>
+            <option value="india">India</option>
+            <option value="korea">Korea</option>
+            <option value="turkey">Turkey</option>
+            <option value="madagaskar">Madagaskar</option>
+        </select><br><br>
+        <label for="uzbekistan">Timezone</label>
+        <input type="time" id="Uzbekistan">
+    </form>
+</div>
 
-    </div>
+<div class="page">
+    <h1>EVENTS PAGE</h1>
+    <p>Click <a href="#">here</a> to go to the welcome page</p>
+    <form action="#" method="post">
+        <label for="eventName">Event Name:</label><br>
+        <input type="text" id="eventName" name="eventName"><br><br>
+
+        <label for="sports">Sports:</label><br>
+        <select id="sports" name="sports">
+            <option value="baseball">Baseball</option>
+            <option value="football">Football</option>
+            <option value="basketball">Basketball</option>
+        </select><br><br>
+
+        <label for="location">Location:</label><br>
+        <select id="location" name="location">
+            <option value="1stStreet">1st Street</option>
+            <option value="2ndStreet">2nd Street</option>
+            <option value="3rdStreet">3rd Street</option>
+        </select><br><br>
+
+        <label for="time">Time:</label><br>
+        <input type="datetime-local" id="time" name="time"><br><br>
+
+        <label for="players">Number of Players:</label><br>
+        <input type="number" id="players" name="players"><br><br>
+
+        <label for="minAge">Minimum Age:</label><br>
+        <input type="number" id="minAge" name="minAge"><br><br>
+
+        <label for="maxAge">Maximum Age:</label><br>
+        <input type="number" id="maxAge" name="maxAge"><br><br>
+
+        <label>Minimum Skill Level:</label><br>
+        <input type="radio" name="minSkill" value="1"> 1
+        <input type="radio" name="minSkill" value="2"> 2
+        <input type="radio" name="minSkill" value="3"> 3
+        <input type="radio" name="minSkill" value="4"> 4
+        <input type="radio" name="minSkill" value="5"> 5
+        <br><br>
+
+        <label>Maximum Skill Level:</label><br>
+        <input type="radio" name="maxSkill" value="1"> 1
+        <input type="radio" name="maxSkill" value="2"> 2
+        <input type="radio" name="maxSkill" value="3"> 3
+        <input type="radio" name="maxSkill" value="4"> 4
+        <input type="radio" name="maxSkill" value="5"> 5
+        <br><br>
+
+        <p>Creator: yjkimb</p>
+        <button type="submit">Send</button>
+    </form>
+</div>
+
+<div class="box-container">
+    <div class="box">a</div>
+    <div class="box">b</div>
+    <div class="box">c</div>
+</div>
+
+<div class="letter-container">
+  <form>
+    <div class="letter-box">a</div>
+    <div class="letter-box">b</div>
+    <div class="letter-box">c</div>
+  </form>
+</div>
+
+<div class="box-class">
+    <form action="">
+        <div class="boxes">a</div>
+        <div class="boxes">b</div>
+        <div class="boxes">c</div>
+    </form>
+</div>
 </body>
-
 </html>
